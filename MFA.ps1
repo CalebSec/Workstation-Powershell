@@ -1,3 +1,10 @@
+#The prerequisite for this script is to installl the Azure connect module
+#Install-Module AzureAD
+
+#Connect To AzureConnect
+#You will need an account with the correct permissions for Microsoft Graph
+Connect-AzureAD
+
 #Get all Azure users
 $users = get-mguser -All
 
